@@ -1,8 +1,10 @@
-name: F Store
+name: f-store
 version: "1.0.0"
 summary: A demo E-commerce App
 description: |
-  This is an example App to explore the Snapcraft, SnapStore and Flutter. To make These types of applications, Contact me on UpWork : https://upwork.com/shoaib_hossain_
+  This is an example App to explore the Snapcraft, 
+  SnapStore and Flutter. To make These types of applications, 
+  Contact me on UpWork : https://upwork.com/shoaib_hossain_
 
 base: core22
 confinement: strict
@@ -11,8 +13,8 @@ icon: snap/gui/icon.png
 
 apps:
   f-store:
-    command: f-store
-    extensions: [gnome]
+    command: f_store
+    # extensions: [gnome]
 
 parts:
   f-store:
