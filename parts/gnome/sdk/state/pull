@@ -1,0 +1,55 @@
+files: !!set {}
+directories: !!set {}
+part-properties:
+  plugin: make
+  source: /snap/snapcraft/12024/share/snapcraft/extensions/desktop/command-chain
+  source-checksum: ''
+  source-branch: ''
+  source-commit: ''
+  source-depth: 0
+  source-subdir: ''
+  source-submodules: null
+  source-tag: ''
+  source-type: ''
+  disable-parallel: false
+  after: []
+  overlay-packages: []
+  stage-snaps: []
+  stage-packages: []
+  build-snaps:
+  - gnome-42-2204-sdk
+  build-packages: []
+  build-environment: []
+  build-attributes: []
+  organize: {}
+  overlay:
+  - '*'
+  stage:
+  - '*'
+  prime:
+  - '*'
+  override-pull: null
+  overlay-script: null
+  override-build: null
+  override-stage: null
+  override-prime: null
+  permissions: []
+  make-parameters: []
+project-options:
+  application_name: snapcraft
+  arch_triplet: x86_64-linux-gnu
+  target_arch: amd64
+  project_vars_part_name: null
+  project_vars:
+    version:
+      value: 1.0.5
+      updated: false
+    grade:
+      value: stable
+      updated: false
+assets:
+  stage-packages: null
+  stage-snaps: null
+  source-details: null
+outdated-files: null
+outdated-dirs: null
