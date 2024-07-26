@@ -1,9 +1,10 @@
 [Desktop Entry]
 Name=F Store
-Version=1.0.0
+GenericName=Flutter Made Store
+Version=1.0.5
 Comment=A demo Futter E-commerce project by SIHAB
+Icon=f-store
 Exec=f-store
-Icon=${SNAP}/meta/gui/f-store.png
 Terminal=false
 Type=Application
 Categories=Utility;Application;ECommerce;Store;

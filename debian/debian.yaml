@@ -1,0 +1,19 @@
+flutter_app: 
+  command: f_store
+  arch: x64
+  parent: /usr/local/lib
+  nonInteractive: true
+
+control:
+  Package: f-store
+  Version: 1.0.1
+  Architecture: amd64
+  Priority: optional
+  Depends:
+  Maintainer: SIHAB
+  Description: This is an example App to explore the Snapcraft, 
+    SnapStore and Flutter. To make These types of applications, 
+    Contact me on UpWork!
+  
+#options:
+#  exec_out_dir: debian/packages

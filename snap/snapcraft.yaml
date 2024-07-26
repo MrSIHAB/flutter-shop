@@ -1,33 +1,32 @@
 name: f-store
-version: "1.0.5"
+version: 1.0.0
 summary: A demo E-commerce App
-description: |
-  This is an example App to explore the Snapcraft, 
-  SnapStore and Flutter. To make These types of applications, 
-  Contact me on UpWork:
+description: hello world
+# description: This is an example App to explore the Snapcraft, 
+#   SnapStore and Flutter. To make These types of applications, 
+#   Contact me on UpWork
 
 confinement: strict
 base: core22
 grade: stable
-icon: snap/gui/icon.png
+# icon: snap/gui/icon.png
 
-slots:
-  dbus-f-store:
-    interface: dbus
-    bus: session
-    name: org.bar.f_store
-
+# slots:
+#   dbus-f-store: # adjust accordingly to your app name
+#     interface: dbus
+#     bus: session
+#     name: org.bar.f_store # adjust accordingly to your app name and
+    
 apps:
   f-store:
     command: f_store
-    extensions: [gnome]
+#     extensions: [gnome] # gnome includes the libraries required by flutter
     plugs:
-      - network
+    - network
     slots:
       - dbus-f-store
-
 parts:
   f-store:
     source: .
     plugin: flutter
-    flutter-target: lib/main.dart
+    flutter-target: lib/main.dart # The main entry-point file of the application
