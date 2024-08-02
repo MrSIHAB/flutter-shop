@@ -4,7 +4,7 @@ summary: An ecommerce app made with flutter framework
 description: |
   First snap buid of an ecommerce app 'F-store' made with flutter framework
 
-base: core22
+base: core24
 confinement: strict
 grade: stable
 
