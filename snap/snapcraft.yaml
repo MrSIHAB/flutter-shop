@@ -8,7 +8,7 @@ description: This is an example App to explore the Snapcraft,
 confinement: strict
 base: core22
 grade: stable
-icon: snap/gui/icon.png
+icon: snap/gui/f-store.png
 
 slots:
   dbus-f-store: # adjust accordingly to your app name
