@@ -20,8 +20,8 @@ apps:
   f-store:
     command: f_store
     extensions: [gnome] # gnome includes the libraries required by flutter
-    # plugs:
-    #   - network
+    plugs:
+    - network
     # slots:
     #   - dbus-f-store
 parts:
