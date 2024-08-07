@@ -6,24 +6,24 @@ description: This is an example App to explore the Snapcraft,
   Contact me on UpWork
 
 confinement: strict
-base: core22
+base: core24
 grade: stable
 icon: snap/gui/f-store.png
 
-slots:
-  dbus-f-store: # adjust accordingly to your app name
-    interface: dbus
-    bus: session
-    name: org.bar.f_store # adjust accordingly to your app name and
+# slots:
+#   dbus-f-store: # adjust accordingly to your app name
+#     interface: dbus
+#     bus: session
+#     name: org.bar.f_store # adjust accordingly to your app name and
     
 apps:
   f-store:
     command: f_store
     extensions: [gnome] # gnome includes the libraries required by flutter
-    plugs:
-    - network
-    slots:
-      - dbus-f-store
+    # plugs:
+    #   - network
+    # slots:
+    #   - dbus-f-store
 parts:
   f-store:
     source: .
