@@ -19,7 +19,7 @@ icon: snap/gui/f-store.png
 apps:
   f-store:
     command: f_store
-    extensions: [gnome] # gnome includes the libraries required by flutter
+    # extensions: [gnome] # gnome includes the libraries required by flutter
     plugs:
     - network
     # slots:
