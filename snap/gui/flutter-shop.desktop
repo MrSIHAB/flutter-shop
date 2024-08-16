@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0.0
+Type=Application
+Name=Flutter Shop
+GenericName=ecommerce app
+Exec=flutter-shop
+MimeType=applications/khd
+Icon=${SNAP}/meta/gui/flutter-shop.png
+Terminal=false
+Path=/usr/bin/
+Categories=Utility;
+StartupNotify=true

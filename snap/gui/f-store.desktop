@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=F Store
-Version=1.0.0
-Comment=A demo Futter E-commerce project by SIHAB
-Exec=f-store
-Icon=${SNAP}/meta/gui/f-store.png
-Terminal=false
-Type=Application
-Categories=Utility;Application;ECommerce;Store;

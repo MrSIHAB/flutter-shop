@@ -1,29 +1,21 @@
 name: flutter-shop
-summary: Flutter Shop
 version: git
-adopt-info: flutter-shop
-grade: stable
+summary: A e-commerce design with flutter framework
+description: |
+  A Simple Shopping app build with flutter framework
 confinement: strict
-base: core22
-#platform:
-#  amd64:
-#  arm64:
-
-parts:
-  flutter-shop:
-    plugin: flutter
-    source: .
-    flutter-target: lib/main.dart
-
-slots:
-  futter-shop:
-    interface: dbus
-    bus: session
-    name: com.eigfa.flutter-shop
+base: core18
+grade: stable
 
 apps:
   flutter-shop:
     command: f_store
-    common-id: com.eigfa.flutter-shop
-    desktop: usr/share/applications/com.eigfa.flutter-shop
-    extensions: [ gnome ]
+    extensions: [flutter-master]
+    plugs:
+      - network
+
+parts:
+  flutter-shop:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
