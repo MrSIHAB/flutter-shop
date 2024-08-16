@@ -2,7 +2,7 @@ flutter_app:
   command: f_store
   arch: x64
   parent: /usr/local/lib
-  nonInteractive: true
+  nonInteractive: false
 
 control:
   Package: f-store
