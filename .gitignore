@@ -42,3 +42,8 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /parts/
+
+
+
+# my add
+*.snap
