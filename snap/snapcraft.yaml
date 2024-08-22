@@ -4,16 +4,16 @@ summary: A e-commerce design with flutter framework
 description: |
   A Simple Shopping app build with flutter framework
 confinement: strict
-base: core24
+base: core18
 grade: stable
-platforms:
-  amd64:
-  arm64:
+#platforms:
+#  amd64:
+#  arm64:
 
 apps:
   flutter-shop:
     command: f_store
-    extensions: [ gnome ]
+    extensions: [ flutter-stable ]
     plugs:
     - home
     - desktop
@@ -24,13 +24,4 @@ parts:
   flutter-shop:
     source: .
     plugin: flutter
-    flutter-channel: master
     flutter-target: lib/main.dart
-    build-packages:
-      -  cmake
-      -  clang
-      -  ninja-build
-      -  pkg-config
-      -  libgtk-3-dev
-      -  liblzma-dev
-      -  libstdc++-12-dev
