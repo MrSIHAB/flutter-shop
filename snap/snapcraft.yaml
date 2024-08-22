@@ -15,7 +15,10 @@ apps:
     command: f_store
     extensions: [ gnome ]
     plugs:
-      - network
+    - home
+    - desktop
+    - desktop-legacy
+    - wayland
 
 parts:
   flutter-shop:
