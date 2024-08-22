@@ -6,7 +6,7 @@ description: |
 confinement: strict
 base: core24
 grade: stable
-platform:
+platforms:
   amd64:
   arm64:
 
@@ -21,4 +21,5 @@ parts:
   flutter-shop:
     source: .
     plugin: flutter
+    flutter-channel: master
     flutter-target: lib/main.dart
