@@ -6,11 +6,14 @@ description: |
 confinement: strict
 base: core24
 grade: stable
+platform:
+  amd64:
+  arm64:
 
 apps:
   flutter-shop:
     command: f_store
-    extensions: [gnome]
+    extensions: [ gnome ]
     plugs:
       - network
 
