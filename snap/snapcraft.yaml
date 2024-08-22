@@ -13,12 +13,11 @@ grade: stable
 apps:
   flutter-shop:
     command: f_store
-    extensions: [ flutter-stable ]
+    extensions: [ flutter-master ]
     plugs:
-    - home
-    - desktop
-    - desktop-legacy
-    - wayland
+      -  network
+      -  desktop
+      -  wayland
 
 parts:
   flutter-shop:
