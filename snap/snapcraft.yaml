@@ -4,13 +4,13 @@ summary: A e-commerce design with flutter framework
 description: |
   A Simple Shopping app build with flutter framework
 confinement: strict
-base: core18
+base: core20
 grade: stable
 
 apps:
   flutter-shop:
     command: f_store
-    extensions: [flutter-master]
+    extensions: [gnome]
     plugs:
       - network
 
