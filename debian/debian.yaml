@@ -1,5 +1,5 @@
-flutter_app: 
-  command: f_store
+flutter_app:
+  command: flutter_shop
   arch: x64
   parent: /usr/local/lib
   nonInteractive: false
@@ -11,9 +11,9 @@ control:
   Priority: optional
   Depends:
   Maintainer: SIHAB
-  Description: This is an example App to explore the Snapcraft, 
-    SnapStore and Flutter. To make These types of applications, 
+  Description: This is an example App to explore the Snapcraft,
+    SnapStore and Flutter. To make These types of applications,
     Contact me on UpWork!
-  
+
 #options:
 #  exec_out_dir: debian/packages
