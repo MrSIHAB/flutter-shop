@@ -1,10 +1,13 @@
 name: flutter-shop
 version: git
-summary: A e-commerce design with flutter framework
+summary: An e-commerce design with flutter framework
 description: |
   A Simple Shopping app build with flutter framework
+
 confinement: strict
-base: core18
+type: app
+
+base: core22
 grade: stable
 #platforms:
 #  amd64:
@@ -13,14 +16,17 @@ grade: stable
 apps:
   flutter-shop:
     command: flutter_shop
-    extensions: [flutter-master]
-    plugs:
-      - network
-      - desktop
-      - wayland
+    extensions: [gnome]
+    # plugs:
+    #   - network
+      # - desktop
+      # - wayland
 
 parts:
   flutter-shop:
     source: .
     plugin: flutter
     flutter-target: lib/main.dart
+
+website: https://sihab.deno.dev
+license: MIT
